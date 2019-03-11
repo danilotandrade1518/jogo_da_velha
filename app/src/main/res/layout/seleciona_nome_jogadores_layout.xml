@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/styles_layout_principal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/styles_layout_principal"
+        android:orientation="vertical"
+        tools:context="br.com.jogodavelha.activitys.SelecionaNumJogadoresActivity" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/styles_layout_secundario"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/jogodavelha" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/styles_layout_secundario" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/styles_layout_principal" >
+
+                <TextView
+                    android:id="@+id/txtInformeNomes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/styles_edit_text"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:background="@drawable/styles_layout_secundario" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/styles_layout_principal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/styles_edit_text"
+                    android:text="@string/jog1"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnAvancarNmJog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/styles_button"
+                    android:text="@string/avancar"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:background="@drawable/styles_edit_text"
+                    android:text="@string/jog2"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNmPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:background="@drawable/styles_edit_text"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtNmPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtNmPlayer1"
+                    android:layout_alignRight="@+id/btnAvancarNmJog"
+                    android:layout_below="@+id/textView1"
+                    android:background="@drawable/styles_edit_text"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

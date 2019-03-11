@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jogo da Velha</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="selecioneModoJogo">Selecione o Modo de Jogo: </string>
+    <string name="onePlayer">Um Jogador </string>
+    <string name="twoPlayer">Dois Jogadores</string>
+    <string name="avancar">Avançar!</string>
+    <string name="jog1">Jogador 1: </string>
+    <string name="jog2">Jogador 2: </string>
+    <string name="title_activity_jogo">JogoActivity</string>
+    <string name="title_activity_seleciona_dificuldade">SelecionaDificuldadeActivity</string>
+    <string name="dificuldadeJogo">Selecione a Dificuldade do Jogo: </string>
+    <string name="easy">Fácil </string>
+    <string name="medium">Médio </string>
+    <string name="hard">Difícil </string>
+    <string name="title_activity_vitoria">VitoriaActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_empate">EmpateActivity</string>
+    <string name="empatado">O Jogo Terminou       \n      Empatado!</string>
+        <string name="jogar_novamente">Jogar Novamente!</string>
+    
+</resources>

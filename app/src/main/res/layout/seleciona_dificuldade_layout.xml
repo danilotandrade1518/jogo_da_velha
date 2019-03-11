@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/styles_layout_principal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/styles_layout_principal"
+        android:orientation="vertical"
+        tools:context="br.com.jogodavelha.activitys.SelecionaNumJogadoresActivity" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/styles_layout_secundario"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Jogo da Velha"
+                android:src="@drawable/jogodavelha" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/styles_layout_secundario" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/styles_layout_principal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/styles_edit_text"
+                    android:text="@string/dificuldadeJogo"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/styles_layout_secundario" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:background="@drawable/styles_layout_principal" >
+
+                <RadioGroup
+                    android:id="@+id/rbModoJogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbEasy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:checked="true"
+                        android:text="@string/easy"
+                        android:textColor="#26902b"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/medium"
+                        android:textColor="#26902b"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbHard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hard"
+                        android:textColor="#26902b"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnAvancarDificJog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/styles_button"
+                    android:text="@string/avancar"
+                    android:textColor="#26902b"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
